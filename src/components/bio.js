@@ -38,11 +38,10 @@ function Bio() {
               }}
             />
             <p>
-              Written by <strong>{author}</strong> who lives and works in San
-              Francisco building useful things.
+              '길 위의 생명에게 도움의 손길을, 레스켓'의 개발자 <strong>{author}</strong>들이 작성하는 기술블로그입니다.
               {` `}
-              <a href={`https://twitter.com/${social.twitter}`}>
-                You should follow him on Twitter
+              <a href={`https://facebook.com/${social.facebook}`}>
+                페이스북에서도 만나볼 수 있습니다.
               </a>
             </p>
           </div>
@@ -54,7 +53,7 @@ function Bio() {
 
 const bioQuery = graphql`
   query BioQuery {
-    avatar: file(absolutePath: { regex: "/profile-pic.jpg/" }) {
+    avatar: file(absolutePath: { regex: "/rescat_main.png/" }) {
       childImageSharp {
         fixed(width: 50, height: 50) {
           ...GatsbyImageSharpFixed
@@ -65,7 +64,7 @@ const bioQuery = graphql`
       siteMetadata {
         author
         social {
-          twitter
+          facebook
         }
       }
     }
