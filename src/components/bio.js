@@ -40,9 +40,13 @@ function Bio() {
             <p>
               '길 위의 생명에게 도움의 손길을, 레스켓'의 개발자 <strong>{author}</strong>들이 작성하는 기술블로그입니다.
               {` `}
+              <a href={`https://github.com/jeIIyqueen`}>
+                깃허브
+              </a>와{` `} 
               <a href={`https://facebook.com/${social.facebook}`}>
-                페이스북에서도 만나볼 수 있습니다.
+                페이스북
               </a>
+              에서도 만나볼 수 있습니다.
             </p>
           </div>
         )
