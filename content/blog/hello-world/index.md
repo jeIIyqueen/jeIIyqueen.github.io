@@ -1,6 +1,7 @@
 ---
-title: Hello World
+title: 첫번째 글
 date: "2015-05-01T22:12:03.284Z"
+author: [kwonhyeona]
 ---
 
 This is my first post on my new fake blog! How exciting!

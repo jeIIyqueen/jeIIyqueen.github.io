@@ -1,6 +1,7 @@
 ---
-title: My Second Post!
+title: 세번째 글
 date: "2015-05-06T23:46:37.121Z"
+author: kwonhyeona
 ---
 
 Wow! I love blogging so much already.

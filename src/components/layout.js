@@ -10,51 +10,24 @@ class Layout extends React.Component {
     const rootPath = `${__PATH_PREFIX__}/`
     let header;
 
-    if (location.pathname === rootPath) {
-      header = (
-          <h1>
-            <Link
-              style={{
-                boxShadow: `none`,
-                textDecoration: `none`,
-                color: `inherit`,
-              }}
-              to={`/`}
-            >
-              <img src={logo}></img>
-              기술 블로그
-            </Link>
-          </h1>
-      )
-    } else {
-      header = (
-        <h3
+    header = (
+      <h1>
+        <Link
           style={{
-            fontFamily: `Montserrat, sans-serif`,
-            marginTop: 0,
-            textAlign: 'center',
+            boxShadow: `none`,
+            textDecoration: `none`,
+            color: `inherit`,
           }}
+          to={`/`}
         >
-          <Link
-            style={{
-              boxShadow: `none`,
-              textDecoration: `none`,
-              color: `inherit`,
-            }}
-            to={`/`}
-          >
-            {title}
+          <img src={logo} alt="logo"></img>
+          기술 블로그
           </Link>
-        </h3>
-      )
-    }
+      </h1>
+    )
+
     return (
-      <div
-        style={{
-          marginLeft: `auto`,
-          marginRight: `auto`,
-        }}
-      >
+      <div>
         <header>{header}</header>
         <main>{children}</main>
         <footer
@@ -62,9 +35,7 @@ class Layout extends React.Component {
             marginTop: rhythm(1.5),
           }}
         >
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://github.com/jeIIyqueen">jeIIyqueen</a>
+          Copyright © <a href="https://github.com/jeIIyqueen">jeIIyqueen</a>, All rights reserved.
         </footer>
       </div>
     )

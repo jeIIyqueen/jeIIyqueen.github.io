@@ -81,4 +81,7 @@ module.exports = {
       },
     },
   ],
+  mapping: {
+    "MarkdownRemark.frontmatter.author": `AuthorYaml`,
+  },
 }

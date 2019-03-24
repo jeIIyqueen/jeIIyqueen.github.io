@@ -1,0 +1,18 @@
+.post-container{
+  background: white;
+  margin: 60px 100px;
+  padding: 20px 40px;
+  .post-item{
+    border-bottom: 1px solid #efefef;
+    margin-bottom: 70px;
+    .post-title{
+      margin-bottom: 20px;
+    }
+    .post-date{
+      font-size: 12px;
+    }
+    .post-contents{
+  
+    }
+  }
+}

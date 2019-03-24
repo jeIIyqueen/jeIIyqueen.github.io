@@ -35,7 +35,6 @@ const defaultStyles = {
       },
       'strong': {
         color: "#f29191",
-        textShadow: '2px 2px #585858'
       },
       "h3,h4,h5,h6": {
         marginBottom: rhythm(1 / 2),
@@ -49,7 +48,7 @@ const defaultStyles = {
         marginLeft: rhythm(1.25)
       },
       a: {
-        color: "#4078c0",
+        color: "#000000",
         textDecoration: "none"
       },
       "a:hover,a:active": {
